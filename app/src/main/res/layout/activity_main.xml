@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="by.fitbstu.nba.workouthelper.MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="85dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:text="Get Started"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="104dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="Start"
+        android:text="Start Traning"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="92dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:onClick="Add"
+        android:text="Add Traning" />
+</LinearLayout>

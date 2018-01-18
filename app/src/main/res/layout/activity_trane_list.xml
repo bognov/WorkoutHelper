@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="by.fitbstu.nba.workouthelper.traneList"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checkedButton="@+id/radioButton1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:contextClickable="true"
+                android:onClick="Day1Click"
+                android:text="Day 1"
+                android:textAlignment="center"
+                tools:clickable="true" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:contextClickable="true"
+                android:onClick="Day2Click"
+                android:text="Day 2"
+                android:textAlignment="center"
+                tools:clickable="true" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:contextClickable="true"
+                android:onClick="Day3Click"
+                android:text="Day 3"
+                android:textAlignment="center"
+                tools:clickable="true" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="19dp" />
+
+    <ListView
+        android:id="@+id/List1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
